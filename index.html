@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-outer">
+        <i class="fa fa-long-arrow-left" id="outerLeftArrow"></i>
+    </div>
+    <div class="container">
+        <header>
+            <div class="header">
+                <h2 id="head">
+                    Add your Tasks To Do
+                </h2>
+            </div>
+            <div class="new-todo">
+                <form id="todoform">
+                    <input type="text" name="newtodo" id="newtodo" placeholder="I have to...">
+                    
+                    <input type="date" id="todoDate" required>
+                    <input type="text" id="todoTags" placeholder="Add tags (Space-separated)">
+                    <br>
+                    <button type="submit">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </header>
+        <div id="todo-Category">
+
+        </div>
+        
+        <div id="todos-list">
+
+        </div>
+        <div class="notification">
+            
+        </div>
+        <div class="user-buttons">
+            <button class="animated-button" id="beta-btn" >Beta</button>
+            <button class="animated-button" id="alpha-btn" class="active">Alpha</button>
+            <button class="animated-button" id="charlie-btn">Charlie</button>
+          </div>
+    </div>
+    <div class="right-outer">
+        <i id="outerRightArrow" class="fa fa-long-arrow-right"></i>
+    </div>
+    
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
