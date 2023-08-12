@@ -335,9 +335,7 @@ function showTodos() {
             <div class="Duedate">
             <p>${todo.date ? todo.date : ''}</p>
             </div>
-            // <div class="arrows" id="${index}">
-            //   ${arrowsHTML}
-            // </div>
+ 
             
         </div>`;
        
